@@ -4,14 +4,22 @@ class User extends React.Component{
     {
         super();
         this.state={
-            email:"aman@gmail.com"
+            email:"aman@gmail.com",
+            name:"Aman"
         }
     }
+    componentDidMount()
+    {
+    // console.warn("componentdidmount")
+    }
     render(){
+        // console.warn("render")
+        
         return(
             <div>
                 <h1>This is User {this.state.email}</h1>
-                <button onClick={()=>this.setState({email:"rahul@gmail.com"})}>Update Name</button> 
+                <h1>This is User {this.state.name}</h1>
+                <button onClick={()=>this.setState({email:"rahul@gmail.com",name:"rahul"})}>Update Name</button> 
             </div>
         )
     }

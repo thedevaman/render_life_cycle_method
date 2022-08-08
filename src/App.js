@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import User from './User';
+import Updatedidcomponent from './Updatedidcomponent';
 import React from 'react';
 
 
@@ -8,22 +9,14 @@ function App() {
   const [name,setName]=React.useState("Aman")
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+     
+      <h1>Rendor method in React</h1>
       <User/>
       {/* <button onClick={()=>setName("Rahul")}>Update Name</button> */}
+      <hr/>
+      <Updatedidcomponent/>
+      <hr/>
+
     </div>
   );
 }
