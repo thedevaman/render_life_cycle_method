@@ -4,6 +4,7 @@ import User from './User';
 import Updatedidcomponent from './Updatedidcomponent';
 import React from 'react';
 import Shouldupdatedidcomponent from './Shouldupdatedidcomponent';
+import Componentwillmount from './Componentwillmount';
 
 function App() {
   const [name,setName]=React.useState("Aman")
@@ -17,6 +18,8 @@ function App() {
       <Updatedidcomponent/>
       <hr/>
       <Shouldupdatedidcomponent/>
+      <hr/>
+      <Componentwillmount/>
 
     </div>
   );
