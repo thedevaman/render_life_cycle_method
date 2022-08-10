@@ -16,12 +16,13 @@ class Updatedidcomponent extends React.Component
 
          if(this.state.count<10){
             this.setState({count:this.state.count+1})
+            alert("condition executed "+this.state.count)
          }
 
-        if(lastState.count===this.state.count)
-        {
-            alert("data found equal")
-        }
+        // if(lastState.count===this.state.count)
+        // {
+        //     alert("data found equal")
+        // }
         
     }
     render(){

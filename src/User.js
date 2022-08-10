@@ -17,6 +17,7 @@ class User extends React.Component{
         
         return(
             <div>
+                <h1>Rendor method in React</h1>
                 <h1>This is User {this.state.email}</h1>
                 <h1>This is User {this.state.name}</h1>
                 <button onClick={()=>this.setState({email:"rahul@gmail.com",name:"rahul"})}>Update Name</button> 
